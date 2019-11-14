@@ -1,22 +1,226 @@
-.App {
-  text-align: center;
+.logo {
+  height: 45px;
+}
+.header {
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
+.hero {
+  display: flex;
+  padding: 0 30px 20px 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-info {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+  padding-right: 30px;
+}
+
+.restaurant-pic {
+  height: 180px;
+  border-radius: 10px;
+}
+
+.restaurant-description {
+  font-size: 1.2rem;
+  color: grey;
+}
+.menu {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f4f5f5;
+  padding-bottom: 50px;
+}
+.carte {
+  display: flex;
+
+  width: 70%;
+}
+
+.plat {
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+  border-radius: 5px;
+  height: 160px;
+  width: calc(45% - 10px);
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin-top: 10px;
+}
+
+.plats-category {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.plats-display {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plat-image {
+  height: 100%;
+  width: 35%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.plat-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.plat-description {
+  min-height: 55px;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding-right: 5px;
+  color: grey;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-bottom: 0px;
+}
+
+.plat-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: grey;
+}
+
+.plat-state {
+  font-size: 1rem;
+  font-weight: 500;
+  color: orange;
+}
+
+.description {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: space-around;
+  width: 65%;
 }
 
-.App-link {
-  color: #09d3ac;
+.panier-vide {
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+  background: #fff;
+  border-radius: 4px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 30px 0;
+  margin-left: 25px;
+  width: 400px;
+  /* border: solid black 1px; */
+  padding: 10px 10px 0px 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  min-height: 200px;
+}
+
+.purchase-validation-vide {
+  background-color: #cacaca;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 2rem;
+  font-weight: bold;
+  color: rgba(20, 20, 20, 0.65);
+}
+
+.purchase-validation-vide-message {
+  text-align: center;
+  padding: 60px 0;
+  font-weight: bold;
+  color: rgba(20, 20, 20, 0.65);
+}
+
+.panier {
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+  background: #fff;
+  border-radius: 4px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 30px 0;
+  margin-left: 25px;
+  width: 400px;
+  /* border: solid black 1px; */
+  padding: 10px 10px 0px 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.purchase-validation {
+  background-color: #02cdbd;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 2rem;
+}
+
+.purchase {
+  min-height: 2rem;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  /* padding: 0 8px; */
+}
+
+.sub-total {
+  min-height: 2rem;
+  border-top: solid grey 0.3px;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-block {
+  display: flex;
+}
+
+.sub-total-value-bloc {
+  display: flex;
+}
+
+.delivery-fee {
+  display: flex;
+  justify-content: space-between;
+  min-height: 2rem;
+  border-bottom: solid grey 0.3px;
+  padding: 0rem 0;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  min-height: 2rem;
+  padding: 1rem 0;
 }
